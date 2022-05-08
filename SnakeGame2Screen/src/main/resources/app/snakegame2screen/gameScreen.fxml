@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gameWindowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.snakegame2screen.gameScreenController">
+   <children>
+      <Label fx:id="gameLabel" alignment="CENTER" layoutX="208.0" layoutY="39.0" text="Start The Game" textAlignment="JUSTIFY" textFill="#ffb200">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="snakeHeadicon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" x="350.0" y="250.0">
+         <image>
+            <Image url="@snake.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="foodImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="556.0" y="306.0">
+         <image>
+            <Image url="@food.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
